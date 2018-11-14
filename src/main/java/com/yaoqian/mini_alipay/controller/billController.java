@@ -24,11 +24,11 @@ public class billController {
                 return ResultTools.result(1001, "uid is empty", null);
             }
             PageHelper.startPage(page, pageSize);// 分页配置
-            List<TransactionEntity> userLs = TransactionMapper.QueryTranslistByTime(uid);
+            List<TransactionEntity> Translist = TransactionMapper.QueryTranslistByTime(uid);
             Map<String, Object> map = new HashMap<String, Object>();
-            map.put("count", userLs.size());
+            map.put("count", Translist.size());
             map.put("page", page);
-            map.put("content", userLs);
+            map.put("content", Translist);
             return ResultTools.result(0, "",map);
         } catch (Exception e) {
             return ResultTools.result(404, e.getMessage(), null);

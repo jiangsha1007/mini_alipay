@@ -3,7 +3,8 @@ package com.yaoqian.mini_alipay.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+import javax.persistence.Column;
+import javax.persistence.Table;
 /**
  * Created by Administrator on 2017/5/12.
  */
@@ -14,7 +15,9 @@ public class UserEntity {
     @Id
     @GeneratedValue
     private Long uid;
+    @Column(length = 20)
     private String username;
+    @Column(length = 20)
     private String password;
 
     public Long getId() {

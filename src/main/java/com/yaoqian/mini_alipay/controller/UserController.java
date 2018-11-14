@@ -1,12 +1,10 @@
 package com.yaoqian.mini_alipay.controller;
-import com.yaoqian.mini_alipay.dao.UserDao;
+import com.yaoqian.mini_alipay.mapper.UserDao;
 import com.yaoqian.mini_alipay.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.yaoqian.mini_alipay.entity.*;
-import com.yaoqian.mini_alipay.dao.*;
 import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 @RequestMapping(value = "/user")

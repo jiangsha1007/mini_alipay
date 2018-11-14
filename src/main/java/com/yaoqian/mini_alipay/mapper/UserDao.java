@@ -1,4 +1,4 @@
-package com.yaoqian.mini_alipay.dao;
+package com.yaoqian.mini_alipay.mapper;
 
 import com.yaoqian.mini_alipay.entity.UserEntity;
 import org.springframework.data.repository.CrudRepository;

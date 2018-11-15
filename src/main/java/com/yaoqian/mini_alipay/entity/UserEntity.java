@@ -1,10 +1,15 @@
 package com.yaoqian.mini_alipay.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import javax.persistence.Table;
+import java.util.Date;
+
 /**
  * Created by Administrator on 2017/5/12.
  */
@@ -13,10 +18,16 @@ import javax.persistence.Table;
 public class UserEntity {
 
     @Id
-    @GeneratedValue
-    private Long uid;
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    private String uid;//用户ID
+
     @Column(unique = true)
     private String username;//用户昵称
+
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date createDate;//创建时间
+
     private String password;//登录密码
     private String realname;//真实姓名
     private Integer age;//年龄
@@ -25,20 +36,37 @@ public class UserEntity {
     private String birthday;//生日
     private String region;//地区
 
-    public Long getId() {
+
+    public String getUid() {
         return uid;
     }
 
-    public void setId(Long id) {
-        this.uid = id;
-    }
-
-    public Long getUid() {
-        return uid;
-    }
-
-    public void setUid(Long uid) {
+    public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getRealname() {
@@ -87,21 +115,5 @@ public class UserEntity {
 
     public void setRegion(String region) {
         this.region = region;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }

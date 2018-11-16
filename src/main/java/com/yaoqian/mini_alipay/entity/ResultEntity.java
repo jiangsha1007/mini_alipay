@@ -1,21 +1,21 @@
 package com.yaoqian.mini_alipay.entity;
 import java.util.Map;
 public class ResultEntity {
-    private int status;// 返回码
-    private String message;// 返回消息
+    private int Status;// 返回码
+    private String Message;// 返回消息
     private Map<String, Object> data;// 数据源
 
-    public int getErrcode() {
-        return status;
+    public int getStatus() {
+        return Status;
     }
-    public void setErrcode(int errcode) {
-        this.status = status;
+    public void setStatus(int Status) {
+        this.Status = Status;
     }
-    public String getErrmsg() {
-        return message;
+    public String getMessage() {
+        return Message;
     }
-    public void setErrmsg(String errmsg) {
-        this.message = errmsg;
+    public void setMessage(String Message) {
+        this.Message = Message;
     }
     public Map<String, Object> getData() {
         return data;

@@ -21,31 +21,31 @@ public class ResultTools {
      */
     public static ResultEntity result(int status, String message, Map<String, Object> map) {
         ResultEntity model = new ResultEntity();
-        model.setErrcode(status);
+        model.setStatus(status);
         switch (status) {
             case 0:
-                model.setErrmsg("成功");
+                model.setMessage("成功");
                 if (map != null) {
                     model.setData(map);
                 }
                 break;
             case 1001:
-                model.setErrmsg("请求传参错误 ");
+                model.setMessage("请求传参错误 ");
                 break;
             case 1002:
-                model.setErrmsg("没有对应内容 ");
+                model.setMessage("没有对应内容 ");
                 break;
             case 1003:
-                model.setErrmsg("此用户已存在");
+                model.setMessage("此用户已存在");
                 break;
             case 1004:
-                model.setErrmsg("上传文件为空");
+                model.setMessage("上传文件为空");
                 break;
             case 404:
-                model.setErrmsg(message);
+                model.setMessage(message);
                 break;
             default:
-                model.setErrmsg("未知错误");
+                model.setMessage("未知错误");
                 break;
         }
         return model;

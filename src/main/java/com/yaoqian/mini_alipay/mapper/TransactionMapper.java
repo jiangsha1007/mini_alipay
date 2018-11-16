@@ -11,9 +11,15 @@ public interface TransactionMapper {
     @Select("select * from transaction_info")
     public List<TransactionEntity> QueryTransByAll();
 
-    /*******根据id查询符合用户********/
-    @Select("select * from transaction_info where trans_uid = #{uid}")
+    /*******根据uid查询所有账户********/
     public List<TransactionEntity> QueryTranslistByTime(String uid);
+
+    /*******根据月份查询账单********/
+    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_year =#{arg1} and trans_month =#{arg2} and trans_type in ${arg3}")
+    public List<TransactionEntity> QueryTranslistByTime_y(String uid,int year,int month,String trans_type);
+    /*******根据月份查询账单********/
+    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_time>= #{arg1} and trans_time <= #{arg2} and trans_type in ${arg3}")
+    public List<TransactionEntity> QueryTranslistByTime_d(String uid,String time_start,String time_end,String trans_type);
 
     /*******添加新用户********/
     @Insert("insert into user(name,age,phone) values (#{name},#{age},#{phone})")

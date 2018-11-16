@@ -7,6 +7,7 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomi
 import java.util.Properties;
 import org.springframework.context.annotation.Bean;
 import com.github.pagehelper.PageHelper;
+
 @SpringBootApplication
 @MapperScan("com.yaoqian.mini_alipay.mapper")
 public class DemoApplication implements EmbeddedServletContainerCustomizer{
@@ -27,4 +28,5 @@ public class DemoApplication implements EmbeddedServletContainerCustomizer{
         pageHelper.setProperties(p);
         return pageHelper;
     }
+
 }

@@ -1,9 +1,11 @@
 package com.yaoqian.mini_alipay.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class TokenEntity {
+    @Id
     private  String uid;
     private  String token;
 

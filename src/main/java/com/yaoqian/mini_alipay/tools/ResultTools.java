@@ -9,6 +9,7 @@ public class ResultTools {
      * 1002-----没有对应内容
      * 1003-----此用户已存在
      * 1004-----上传文件为空
+     * 1005-----没有登录信息
      * 404------异常抛出错误
      *
      */
@@ -40,6 +41,9 @@ public class ResultTools {
                 break;
             case 1004:
                 model.setMessage("上传文件为空");
+                break;
+            case 1005:
+                model.setMessage("没有登录信息");
                 break;
             case 404:
                 model.setMessage(message);

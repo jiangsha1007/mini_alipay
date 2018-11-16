@@ -5,13 +5,12 @@ import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.TokenEntity;
 import com.yaoqian.mini_alipay.entity.UserEntity;
 import com.yaoqian.mini_alipay.mapper.UserDao;
+import com.yaoqian.mini_alipay.annotation.Authorization;
+import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,8 +26,8 @@ public class TokenController {
     private TokenService tokenService;
 
     @PostMapping("/login")
-    public ResultEntity login(@RequestParam String userName,
-                              @RequestParam String password) throws Exception {
+    public ResultEntity login(@RequestParam("username") String userName,
+                              @RequestParam("password") String password) throws Exception {
         if (StringUtils.isEmpty(userName) || StringUtils.isEmpty(password)) {
             throw new Exception("用户名或密码为空");
         }
@@ -45,5 +44,11 @@ public class TokenController {
         throw new Exception("用户名或密码错误");
     }
 
+    @Authorization
+    @DeleteMapping
+    public ResultEntity logout(@CurrentUser UserEntity user) {
+        tokenService.deleteToken(user.getUid());
+        return ResultTools.result(0,"注销成功",null);
+    }
 
 }

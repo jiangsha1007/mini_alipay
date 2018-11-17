@@ -12,6 +12,6 @@ public class ExceptionHandle {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public ResultEntity resultexception(Exception exception) {
-        return ResultTools.result(404,exception.getMessage(),null);
+        return ResultTools.error(404,exception.getMessage());
     }
 }

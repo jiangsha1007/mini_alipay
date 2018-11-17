@@ -1,0 +1,448 @@
+2018-11-14 16:44:16,390 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 16:44:16,393 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 16:44:16,394 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 16:44:16,394 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 16:44:16,394 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 16:44:16,394 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 16:44:16,394 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 16:44:16,395 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 16:44:16,431 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 16:44:16,432 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 16:44:16,432 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 16:44:16,432 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 16:44:16,432 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 16:44:16,433 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:44:16,433 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 16:44:16,434 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:44:16,434 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 16:44:16,434 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 16:44:16,435 INFO  main                             - Readiness check result: success
+2018-11-14 16:44:17,224 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 16:44:17,224 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 16:44:17,225 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 16:44:17,225 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 16:46:48,894 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 16:46:48,896 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 16:46:48,896 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 16:46:48,896 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 16:46:48,896 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 16:46:48,896 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 16:46:48,896 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 16:46:48,897 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 16:46:48,931 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 16:46:48,931 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 16:46:48,931 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 16:46:48,931 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 16:46:48,931 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 16:46:48,932 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:46:48,932 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 16:46:48,932 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:46:48,932 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 16:46:48,932 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 16:46:48,932 INFO  main                             - Readiness check result: success
+2018-11-14 16:46:49,265 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 16:46:49,265 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 16:46:49,265 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 16:46:49,265 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 16:48:22,512 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 16:48:22,514 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 16:48:22,514 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 16:48:22,514 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 16:48:22,514 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 16:48:22,514 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 16:48:22,514 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 16:48:22,515 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 16:48:22,551 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 16:48:22,551 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 16:48:22,551 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 16:48:22,551 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 16:48:22,551 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 16:48:22,552 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:48:22,552 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 16:48:22,553 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 16:48:22,553 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 16:48:22,553 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 16:48:22,553 INFO  main                             - Readiness check result: success
+2018-11-14 16:48:23,078 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 16:48:23,078 INFO  RMI TCP Connection(7)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 16:48:23,078 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 16:48:23,078 INFO  RMI TCP Connection(7)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 20:09:37,487 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 20:09:37,488 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 20:09:37,489 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 20:09:37,489 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 20:09:37,489 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 20:09:37,489 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 20:09:37,489 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 20:09:37,490 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 20:09:37,526 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 20:09:37,526 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 20:09:37,526 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 20:09:37,526 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 20:09:37,526 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 20:09:37,527 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:09:37,527 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 20:09:37,528 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:09:37,528 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 20:09:37,528 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 20:09:37,528 INFO  main                             - Readiness check result: success
+2018-11-14 20:09:37,769 INFO  RMI TCP Connection(6)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 20:09:37,769 INFO  RMI TCP Connection(6)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 20:09:37,769 INFO  RMI TCP Connection(6)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 20:09:37,769 INFO  RMI TCP Connection(6)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 20:10:19,440 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 20:10:19,442 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 20:10:19,442 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 20:10:19,442 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 20:10:19,442 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 20:10:19,442 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 20:10:19,442 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 20:10:19,443 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 20:10:19,481 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 20:10:19,481 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 20:10:19,481 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 20:10:19,481 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 20:10:19,481 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 20:10:19,482 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:10:19,482 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 20:10:19,482 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:10:19,482 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 20:10:19,483 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 20:10:19,483 INFO  main                             - Readiness check result: success
+2018-11-14 20:10:20,043 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 20:10:20,043 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 20:10:20,043 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 20:10:20,043 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 20:17:37,913 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 20:17:37,915 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 20:17:37,915 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 20:17:37,915 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 20:17:37,915 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 20:17:37,915 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 20:17:37,915 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 20:17:37,916 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 20:17:37,966 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 20:17:37,966 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 20:17:37,966 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 20:17:37,966 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 20:17:37,966 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 20:17:37,967 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:17:37,967 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 20:17:37,967 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 20:17:37,967 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 20:17:37,967 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 20:17:37,967 INFO  main                             - Readiness check result: success
+2018-11-14 20:17:38,541 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 20:17:38,542 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 20:17:38,542 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 20:17:38,542 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 21:54:33,078 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 21:54:33,080 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 21:54:33,080 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 21:54:33,080 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 21:54:33,080 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 21:54:33,080 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 21:54:33,080 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 21:54:33,082 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 21:54:33,125 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 21:54:33,125 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 21:54:33,125 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 21:54:33,125 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 21:54:33,125 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 21:54:33,126 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 21:54:33,127 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 21:54:33,128 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 21:54:33,128 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 21:54:33,128 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 21:54:33,128 INFO  main                             - Readiness check result: success
+2018-11-14 21:54:33,431 INFO  RMI TCP Connection(5)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 21:54:33,432 INFO  RMI TCP Connection(5)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 21:54:33,432 INFO  RMI TCP Connection(5)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 21:54:33,432 INFO  RMI TCP Connection(5)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:22:12,956 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:22:12,958 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:22:12,958 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:22:12,958 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:22:12,958 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:22:12,958 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:22:12,959 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:22:12,960 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:22:13,127 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:22:13,127 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:22:13,127 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:22:13,127 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:22:13,127 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:22:13,128 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:22:13,128 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:22:13,129 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:22:13,129 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:22:13,129 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:22:13,129 INFO  main                             - Readiness check result: success
+2018-11-14 22:22:13,584 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:22:13,584 INFO  RMI TCP Connection(2)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:22:13,584 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:22:13,584 INFO  RMI TCP Connection(2)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:26:09,826 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:26:09,829 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:26:09,829 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:26:09,829 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:26:09,829 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:26:09,829 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:26:09,829 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:26:09,830 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:26:09,906 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:26:09,907 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:26:09,907 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:26:09,907 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:26:09,907 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:26:09,908 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:26:09,908 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:26:09,908 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:26:09,908 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:26:09,908 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:26:09,908 INFO  main                             - Readiness check result: success
+2018-11-14 22:26:10,311 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:26:10,312 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:26:10,312 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:26:10,312 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:30:59,914 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:30:59,917 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:30:59,917 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:30:59,917 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:30:59,917 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:30:59,917 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:30:59,917 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:30:59,918 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:30:59,994 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:30:59,994 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:30:59,994 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:30:59,994 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:30:59,994 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:30:59,995 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:30:59,995 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:30:59,996 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:30:59,996 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:30:59,996 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:30:59,996 INFO  main                             - Readiness check result: success
+2018-11-14 22:31:00,339 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:31:00,339 INFO  RMI TCP Connection(2)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:31:00,340 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:31:00,340 INFO  RMI TCP Connection(2)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:31:52,727 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:31:52,729 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:31:52,729 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:31:52,729 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:31:52,730 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:31:52,730 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:31:52,730 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:31:52,732 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:31:52,803 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:31:52,803 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:31:52,803 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:31:52,803 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:31:52,803 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:31:52,804 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:31:52,804 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:31:52,805 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:31:52,805 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:31:52,805 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:31:52,805 INFO  main                             - Readiness check result: success
+2018-11-14 22:31:53,009 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:31:53,009 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:31:53,009 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:31:53,009 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:33:35,357 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:33:35,360 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:33:35,360 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:33:35,360 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:33:35,360 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:33:35,360 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:33:35,360 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:33:35,362 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:33:35,436 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:33:35,436 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:33:35,436 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:33:35,436 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:33:35,436 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:33:35,437 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:33:35,438 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:33:35,438 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:33:35,438 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:33:35,438 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:33:35,438 INFO  main                             - Readiness check result: success
+2018-11-14 22:33:35,697 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:33:35,697 INFO  RMI TCP Connection(2)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:33:35,697 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:33:35,697 INFO  RMI TCP Connection(2)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:35:03,739 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:35:03,742 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:35:03,742 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:35:03,742 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:35:03,742 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:35:03,742 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:35:03,742 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:35:03,743 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:35:03,906 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:35:03,906 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:35:03,906 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:35:03,906 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:35:03,906 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:35:03,907 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:35:03,907 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:35:03,908 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:35:03,908 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:35:03,908 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:35:03,908 INFO  main                             - Readiness check result: success
+2018-11-14 22:35:04,226 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:35:04,226 INFO  RMI TCP Connection(4)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:35:04,226 INFO  RMI TCP Connection(4)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:35:04,226 INFO  RMI TCP Connection(4)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-14 22:45:57,661 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-14 22:45:57,663 INFO  main                             - Begin first phase of the readiness check
+2018-11-14 22:45:57,663 INFO  main                             - Begin SpringContext readiness check.
+2018-11-14 22:45:57,663 INFO  main                             - SpringContext readiness check result: success.
+2018-11-14 22:45:57,663 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-14 22:45:57,663 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-14 22:45:57,663 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-14 22:45:57,664 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-14 22:45:57,727 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-14 22:45:57,728 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-14 22:45:57,728 INFO  main                             - first phase of the readiness check result: success
+2018-11-14 22:45:57,728 INFO  main                             - Begin second phase of the readiness check
+2018-11-14 22:45:57,728 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-14 22:45:57,728 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:45:57,728 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-14 22:45:57,729 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-14 22:45:57,729 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-14 22:45:57,729 INFO  main                             - second phase of the readiness check result: success
+2018-11-14 22:45:57,729 INFO  main                             - Readiness check result: success
+2018-11-14 22:45:58,243 INFO  RMI TCP Connection(3)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-14 22:45:58,243 INFO  RMI TCP Connection(3)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-14 22:45:58,243 INFO  RMI TCP Connection(3)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-14 22:45:58,243 INFO  RMI TCP Connection(3)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-16 21:41:56,140 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-16 21:41:56,145 INFO  main                             - Begin first phase of the readiness check
+2018-11-16 21:41:56,145 INFO  main                             - Begin SpringContext readiness check.
+2018-11-16 21:41:56,145 INFO  main                             - SpringContext readiness check result: success.
+2018-11-16 21:41:56,146 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-16 21:41:56,146 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-16 21:41:56,146 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-16 21:41:56,148 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-16 21:41:56,227 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-16 21:41:56,227 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-16 21:41:56,228 INFO  main                             - first phase of the readiness check result: success
+2018-11-16 21:41:56,228 INFO  main                             - Begin second phase of the readiness check
+2018-11-16 21:41:56,228 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-16 21:41:56,233 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-16 21:41:56,233 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-16 21:41:56,235 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-16 21:41:56,236 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-16 21:41:56,236 INFO  main                             - second phase of the readiness check result: success
+2018-11-16 21:41:56,237 INFO  main                             - Readiness check result: success
+2018-11-16 21:41:57,300 INFO  RMI TCP Connection(6)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-16 21:41:57,300 INFO  RMI TCP Connection(6)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-16 21:41:57,300 INFO  RMI TCP Connection(6)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-16 21:41:57,300 INFO  RMI TCP Connection(6)-127.0.0.1  - SpringContext readiness check result: success.
+2018-11-16 23:47:42,275 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-16 23:47:42,277 INFO  main                             - Begin first phase of the readiness check
+2018-11-16 23:47:42,277 INFO  main                             - Begin SpringContext readiness check.
+2018-11-16 23:47:42,277 INFO  main                             - SpringContext readiness check result: success.
+2018-11-16 23:47:42,277 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-16 23:47:42,277 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-16 23:47:42,277 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-16 23:47:42,279 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-16 23:47:42,350 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-16 23:47:42,350 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-16 23:47:42,350 INFO  main                             - first phase of the readiness check result: success
+2018-11-16 23:47:42,350 INFO  main                             - Begin second phase of the readiness check
+2018-11-16 23:47:42,350 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-16 23:47:42,352 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-16 23:47:42,352 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-16 23:47:42,353 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-16 23:47:42,354 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-16 23:47:42,354 INFO  main                             - second phase of the readiness check result: success
+2018-11-16 23:47:42,354 INFO  main                             - Readiness check result: success
+2018-11-16 23:47:42,985 INFO  RMI TCP Connection(5)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-16 23:47:42,985 INFO  RMI TCP Connection(5)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-16 23:47:42,986 INFO  RMI TCP Connection(5)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-16 23:47:42,986 INFO  RMI TCP Connection(5)-127.0.0.1  - SpringContext readiness check result: success.

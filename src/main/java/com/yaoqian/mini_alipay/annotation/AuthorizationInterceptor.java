@@ -15,8 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
+
 
 @Component
 public class AuthorizationInterceptor extends HandlerInterceptorAdapter {
@@ -41,11 +40,11 @@ public class AuthorizationInterceptor extends HandlerInterceptorAdapter {
             request.setAttribute(Constants.CURRENT_USER_ID, tokenEntity.getUid());
             return true;
         }else{
-
+            //如果token验证不成功，返回一个状态码为1005的返回类
             response.setCharacterEncoding("UTF-8");
             response.setContentType("application/json; charset=utf-8");
             try{
-                ResultEntity result = ResultTools.result(1005,"",null);
+                ResultEntity result = ResultTools.error(1005);
                 String jsonout = JSON.toJSONString(result, SerializerFeature.WriteMapNullValue);
                 PrintWriter out = response.getWriter();
                 out.append(jsonout);

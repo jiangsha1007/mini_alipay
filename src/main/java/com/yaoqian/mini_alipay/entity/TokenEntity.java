@@ -3,7 +3,7 @@ package com.yaoqian.mini_alipay.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="token_info")
 public class TokenEntity {
     @Id
     private  String uid;

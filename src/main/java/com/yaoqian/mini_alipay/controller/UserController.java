@@ -92,6 +92,7 @@ public class UserController {
         return ResultTools.success(map);
     }
 
+    
     /***
      * 注销用户
      * @param currentUser---当前用户实体类

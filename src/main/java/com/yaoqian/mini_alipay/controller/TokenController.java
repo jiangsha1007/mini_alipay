@@ -39,7 +39,7 @@ public class TokenController {
             TokenEntity tokenEntity = tokenService.createToken(user.getUid());
             Map<String, Object> map = new HashMap<String, Object>();
             map.put("tokenEntity",tokenEntity);
-            return ResultTools.result(0,"",map);
+            return ResultTools.success("登陆成功",map);
         }
         throw new Exception("用户名或密码错误");
     }
@@ -48,7 +48,7 @@ public class TokenController {
     @DeleteMapping
     public ResultEntity logout(@CurrentUser UserEntity user) {
         tokenService.deleteToken(user.getUid());
-        return ResultTools.result(0,"注销成功",null);
+        return ResultTools.success("登出成功");
     }
 
 }

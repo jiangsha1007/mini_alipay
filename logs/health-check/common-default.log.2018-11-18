@@ -1,0 +1,28 @@
+2018-11-18 00:26:30,407 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-11-18 00:26:30,413 INFO  main                             - Begin first phase of the readiness check
+2018-11-18 00:26:30,413 INFO  main                             - Begin SpringContext readiness check.
+2018-11-18 00:26:30,413 INFO  main                             - SpringContext readiness check result: success.
+2018-11-18 00:26:30,413 INFO  main                             - Begin SOFABoot component readiness check.
+2018-11-18 00:26:30,414 INFO  main                             - SOFABoot component readiness check result: success.
+2018-11-18 00:26:30,414 INFO  main                             - Begin HealthIndicator readiness check.
+2018-11-18 00:26:30,415 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-11-18 00:26:30,490 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-11-18 00:26:30,490 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-11-18 00:26:30,490 INFO  main                             - first phase of the readiness check result: success
+2018-11-18 00:26:30,490 INFO  main                             - Begin second phase of the readiness check
+2018-11-18 00:26:30,491 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-11-18 00:26:30,492 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-11-18 00:26:30,492 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-11-18 00:26:30,493 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-11-18 00:26:30,494 INFO  main                             - SOFABoot readiness check callback : success.
+2018-11-18 00:26:30,494 INFO  main                             - second phase of the readiness check result: success
+2018-11-18 00:26:30,494 INFO  main                             - Readiness check result: success
+2018-11-18 00:26:31,485 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-11-18 00:26:31,485 INFO  RMI TCP Connection(2)-127.0.0.1  - SOFABoot component readiness check result: success.
+2018-11-18 00:26:31,485 INFO  RMI TCP Connection(2)-127.0.0.1  - Begin SpringContext readiness check.
+2018-11-18 00:26:31,485 INFO  RMI TCP Connection(2)-127.0.0.1  - SpringContext readiness check result: success.

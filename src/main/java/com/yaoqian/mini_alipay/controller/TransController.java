@@ -50,7 +50,7 @@ public class TransController {
             }
         }
         else {
-            transService.TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "用户不存在");
+            transService.TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "用户名不存在");
             throw new Exception("用户名不存在！");
         }
     }

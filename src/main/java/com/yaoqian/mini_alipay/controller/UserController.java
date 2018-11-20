@@ -42,7 +42,7 @@ public class UserController {
         if(userDao.findByUsername(userEntity.getUsername()) != null) {
             return ResultTools.error(404,"用户名已存在");
         }
-        userEntity.setBalance((float)0);
+        userEntity.setBalance((float)10000);
         Date date = new Date();
         userEntity.setCreateDate(date);
         userDao.save(userEntity);

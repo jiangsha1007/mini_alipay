@@ -1,15 +1,11 @@
 package com.yaoqian.mini_alipay.Service;
 
-import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
-import com.yaoqian.mini_alipay.entity.UserEntity;
 import com.yaoqian.mini_alipay.mapper.TransactionMapper;
 import com.yaoqian.mini_alipay.mapper.UserDao;
-import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.transaction.Transactional;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -21,32 +17,6 @@ public class TransServiceImplements implements TransService {
 
     @Autowired
     private TransactionMapper transactionMapper;
-
-    @Transactional  //事件，用于同时修改两个账户
-    @Override
-    public ResultEntity Transfer(String out_usrname, String in_usrname, Float amount) throws Exception{
-        UserEntity out_user = userDao.findByUsername(out_usrname);
-        UserEntity in_user = userDao.findByUsername(in_usrname);
-        if(out_user!=null && in_user!=null) {
-            if (out_user.getBalance() >= amount) {
-                out_user.setBalance(out_user.getBalance() - amount);
-                in_user.setBalance(in_user.getBalance() + amount);
-                userDao.save(out_user);
-                userDao.save(in_user);
-                //save transaction records
-                TwoSuccessTransferRecord(out_user.getUid(), in_user.getUid(), amount);
-                return ResultTools.success("转账成功");
-            }
-            else{
-                TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "余额不足");
-                throw new Exception("余额不足");
-            }
-        }
-        else {
-            TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "用户不存在");
-            throw new Exception("用户名不存在！");
-        }
-    }
 
     @Override
     public void CreateRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){

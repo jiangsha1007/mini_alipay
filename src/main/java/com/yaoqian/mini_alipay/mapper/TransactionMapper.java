@@ -5,8 +5,9 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TransactionMapper {
+public interface TransactionMapper extends JpaRepository {
     /*******查询所有账单数据********/
     @Select("select * from transaction_info")
     public List<TransactionEntity> QueryTransByAll();

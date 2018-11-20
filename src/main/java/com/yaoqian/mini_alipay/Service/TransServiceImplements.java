@@ -3,7 +3,7 @@ package com.yaoqian.mini_alipay.Service;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
 import com.yaoqian.mini_alipay.entity.UserEntity;
-import com.yaoqian.mini_alipay.mapper.TransactionDao;
+import com.yaoqian.mini_alipay.mapper.TransactionMapper;
 import com.yaoqian.mini_alipay.mapper.UserDao;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class TransServiceImplements implements TransService {
     private UserDao userDao;
 
     @Autowired
-    private TransactionDao transactionDao;
+    private TransactionMapper transactionMapper;
 
     @Transactional  //事件，用于同时修改两个账户
     @Override
@@ -67,7 +67,7 @@ public class TransServiceImplements implements TransService {
         record.setTrans_obj_id(transObjUid);
         record.setTrans_status(transStatus);
         record.setTrans_remarks(transRemarks);
-        transactionDao.save(record);
+        transactionMapper.save(record);
     }
 
     @Override

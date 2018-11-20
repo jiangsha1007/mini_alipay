@@ -4,7 +4,6 @@ import com.yaoqian.mini_alipay.entity.TransactionEntity;
 import com.yaoqian.mini_alipay.mapper.TransationDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,6 +13,7 @@ public class TransServiceImplements implements TransService {
     @Autowired
     private TransationDao transationDao;
 
+
     @Override
     public void CreateRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
         TransactionEntity record = new TransactionEntity();
@@ -21,7 +21,7 @@ public class TransServiceImplements implements TransService {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss ");
 //	    System.out.println("格式化输出：" + sdf.format(d));
         String a = sdf.format(d);
-        System.out.println(a.substring(0,4));
+//      System.out.println(a.substring(0,4));
         record.setTrans_year(Integer.valueOf(a.substring(0,4)));
         record.setTrans_month(Integer.valueOf(a.substring(5,7)));
         record.setTrans_day(Integer.valueOf(a.substring(8,10)));

@@ -1,18 +1,6 @@
 package com.yaoqian.mini_alipay.Service;
 
-import com.yaoqian.mini_alipay.entity.ResultEntity;
-
 public interface TransService {
-
-    /***
-     * 转账
-     * @param out_usrname
-     * @param in_usrname
-     * @param amount
-     * @return ResultEntity
-     * @throws Exception
-     */
-    ResultEntity Transfer(String out_usrname, String in_usrname, Float amount) throws Exception;
 
     /***
      * 创建一条交易记录

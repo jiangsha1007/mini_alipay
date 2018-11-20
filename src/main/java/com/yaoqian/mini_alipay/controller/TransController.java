@@ -1,8 +1,7 @@
 package com.yaoqian.mini_alipay.controller;
 
-import com.yaoqian.mini_alipay.Service.TransServer;
+import com.yaoqian.mini_alipay.Service.TransService;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
-import com.yaoqian.mini_alipay.mapper.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,15 +9,12 @@ import org.springframework.web.bind.annotation.*;
 public class TransController {
 
     @Autowired
-    private UserDao userDao;
+    private TransService transService;
 
-    @Autowired
-    private TransServer transServer;
-
-    @PutMapping (value = "/transfer")
-    public ResultEntity UserTransfer(@RequestParam("out_id") String out_id,
-                                     @RequestParam("in_id") String in_id,
+    @PostMapping(value = "/transfer")
+    public ResultEntity UserTransfer(@RequestParam("out_usrname") String out_usrname,
+                                     @RequestParam("in_username") String in_usrname,
                                      @RequestParam("amount") float amount) throws Exception{
-        return transServer.Transfer(out_id, in_id, amount);
+        return transService.Transfer(out_usrname, in_usrname, amount);
     }
 }

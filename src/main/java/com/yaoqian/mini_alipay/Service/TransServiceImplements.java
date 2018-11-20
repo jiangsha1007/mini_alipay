@@ -2,6 +2,7 @@ package com.yaoqian.mini_alipay.Service;
 
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
 import com.yaoqian.mini_alipay.mapper.TransationDao;
+import com.yaoqian.mini_alipay.mapper.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
@@ -14,9 +15,12 @@ public class TransServiceImplements implements TransService {
     @Autowired
     private TransationDao transationDao;
 
+    @Autowired
+    private UserDao userDao;
+
 
     @Override
-    public void CreateRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
+    public void CreateRecord(String transUid, String Trans_name,String transObjUid, String Trans_obj_name, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
         TransactionEntity record = new TransactionEntity();
         Date d = new Date();
         long timestamp = System.currentTimeMillis();
@@ -33,32 +37,34 @@ public class TransServiceImplements implements TransService {
         record.setTrans_cost(amount);
         record.setTrans_no(timestamp + getRandomNo());
         record.setTrans_uid(transUid);
+        record.setTrans_name(Trans_name);
         record.setTrans_obj_id(transObjUid);
+        record.setTrans_obj_name(Trans_obj_name);
         record.setTrans_status(transStatus);
         record.setTrans_remarks(transRemarks);
         transationDao.save(record);
     }
 
     @Override
-    public void SuccesRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transCategoryId){
-        CreateRecord(transUid, transObjUid, transType, amount, 0, transCategoryId, "成功");
+    public void SuccesRecord(String transUid, String Trans_name, String transObjUid, String Trans_obj_name, Integer transType, Float amount, Integer transCategoryId){
+        CreateRecord(transUid, Trans_name, transObjUid, Trans_obj_name,transType, amount, 0, transCategoryId, "成功");
     }
 
     @Override
-    public void FailRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transCategoryId, String transRemarks){
-        CreateRecord(transUid, transObjUid, transType, amount, 1, transCategoryId, transRemarks);
+    public void FailRecord(String transUid, String Trans_name, String transObjUid, String Trans_obj_name, Integer transType, Float amount, Integer transCategoryId, String transRemarks){
+        CreateRecord(transUid, Trans_name, transObjUid, Trans_obj_name, transType, amount, 1, transCategoryId, transRemarks);
     }
 
     @Override
-    public void TwoSuccessTransferRecord(String transOutUid, String transInUid, Float amount){
-        SuccesRecord(transOutUid, transInUid, 0, amount, 1);
-        SuccesRecord(transInUid, transOutUid, 1, amount, 1);
+    public void TwoSuccessTransferRecord(String transOutUid, String Trans_name, String transInUid, String Trans_obj_name, Float amount){
+        SuccesRecord(transOutUid, Trans_name, transInUid, Trans_obj_name,0, amount, 1);
+        SuccesRecord(transInUid, Trans_name, transOutUid,Trans_obj_name,  1, amount, 1);
     }
 
     @Override
-    public void TwoFailTransferRecord(String transOutUid, String transInUid, Float amount, String transRemarks){
-        FailRecord(transOutUid, transInUid, 0, amount, 1, transRemarks);
-        FailRecord(transInUid, transOutUid, 1, amount, 1, transRemarks);
+    public void TwoFailTransferRecord(String transOutUid, String Trans_name, String transInUid, String Trans_obj_name, Float amount, String transRemarks){
+        FailRecord(transOutUid, Trans_name, transInUid, Trans_obj_name, 0, amount, 1, transRemarks);
+        FailRecord(transInUid, Trans_name, transOutUid, Trans_obj_name,1, amount, 1, transRemarks);
     }
 
     public String  getRandomNo(){

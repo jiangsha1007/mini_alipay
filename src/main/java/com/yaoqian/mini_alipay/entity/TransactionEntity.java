@@ -60,14 +60,25 @@ public class TransactionEntity {
     /***
      * 交易主体用户id
      */
-    @Column(unique = true, nullable = false, length = 32)
+    @Column(nullable = false, length = 32)
     private String Trans_uid;
+
+    /***
+     * 交易主体用户名
+     */
+    private String Trans_name;
 
     /***
      * 交易目标用户id
      */
-    @Column(unique = true, nullable = false, length = 32)
+    @Column(length = 32)
     private String Trans_obj_id;
+
+    /***
+     * 交易目标用户名
+     */
+    @Column(length = 32)
+    private String Trans_obj_name;
 
     /***
      * 交易标注
@@ -182,5 +193,21 @@ public class TransactionEntity {
 
     public void setTrans_status(Integer trans_status) {
         Trans_status = trans_status;
+    }
+
+    public String getTrans_name() {
+        return Trans_name;
+    }
+
+    public void setTrans_name(String trans_name) {
+        Trans_name = trans_name;
+    }
+
+    public String getTrans_obj_name() {
+        return Trans_obj_name;
+    }
+
+    public void setTrans_obj_name(String trans_obj_name) {
+        Trans_obj_name = trans_obj_name;
     }
 }

@@ -13,6 +13,7 @@ public interface TransactionMapper {
     public List<TransactionEntity> QueryTransByAll();
 
     /*******根据uid查询所有账户********/
+    @Select("select * from transaction_info where trans_uid = #{arg0}")
     public List<TransactionEntity> QueryTranslistByTime(String uid);
 
     /*******根据月份查询账单********/

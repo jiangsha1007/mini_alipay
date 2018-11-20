@@ -50,6 +50,16 @@ public class UserEntity {
     private String region;//地区
     private Float balance;//账户余额
 
+    public UserEntity() {
+    }
+
+    public UserEntity(String password, String email_address, String username, String phone_num) {
+        this.password = password;
+        this.email_address = email_address;
+        this.username = username;
+        this.phone_num = phone_num;
+    }
+
     public String getUid() {
         return uid;
     }
@@ -145,4 +155,7 @@ public class UserEntity {
     public void setBalance(Float balance) {
         this.balance = balance;
     }
+
+
+
 }

@@ -18,72 +18,66 @@ public class TransactionEntity {
     /***
      * 交易单号
      */
-    @Column(length = 20)
     private String Trans_no;
 
     /***
      * 交易年份
      */
-    @Column(length = 11)
     private Integer Trans_year;
 
     /***
      * 交易月份
      */
-    @Column(length = 11)
     private Integer Trans_month;
 
     /***
      * 交易日期
      */
-    @Column(length = 11)
     private Integer Trans_day;
 
     /***
      * 交易时间
      */
-    @Column(length = 20)
     private String Trans_time;
 
     /***
      * 交易类型
      * 0：支出 1：收入
      */
-    @Column(length = 4)
     private Integer Trans_type;
-    @Column(length = 11)
+
+    /***
+     * 交易金额
+     */
     private Float Trans_cost;
 
     /***
      * 交易类别
      * 1： 转账 2：付款 3：缴费 4：还款 5：退款: 6：网购
      */
-    @Column(length = 11)
     private Integer Trans_category_id;
 
     /***
      * 交易主体用户id
      */
-    @Column(length = 20)
+    @Column(unique = true, nullable = false, length = 32)
     private String Trans_uid;
 
     /***
      * 交易目标用户id
      */
-    @Column(length = 20)
+    @Column(unique = true, nullable = false, length = 32)
     private String Trans_obj_id;
 
     /***
      * 交易标注
      */
-    @Column(length = 500)
     private String Trans_remarks;
 
     /***
      * 交易状态
      * 0 ：已完成 1：失败
      */
-    @Column(length = 4)
     private Integer Trans_status;
 
     public Long getTrans_id() {

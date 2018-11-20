@@ -22,6 +22,10 @@ public interface TransactionMapper {
     @Select("select * from transaction_info where trans_uid = #{arg0} and trans_time>= #{arg1} and trans_time <= #{arg2} and trans_type in ${arg3}")
     public List<TransactionEntity> QueryTranslistByTime_d(String uid,String time_start,String time_end,String trans_type);
 
+    /*******查询账单详细********/
+    @Select("select * from transaction_info where trans_id = #{arg0}")
+    public TransactionEntity QueryTransDetail( Integer Trans_id);
+
     /*******添加新用户********/
     @Insert("insert into user(name,age,phone) values (#{name},#{age},#{phone})")
     public int addUser(TransactionEntity user);

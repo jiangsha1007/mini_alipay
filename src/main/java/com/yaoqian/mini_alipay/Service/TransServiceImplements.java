@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 @Component
 public class TransServiceImplements implements TransService {
@@ -18,6 +19,7 @@ public class TransServiceImplements implements TransService {
     public void CreateRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
         TransactionEntity record = new TransactionEntity();
         Date d = new Date();
+        long timestamp = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss ");
 //	    System.out.println("格式化输出：" + sdf.format(d));
         String a = sdf.format(d);
@@ -29,6 +31,7 @@ public class TransServiceImplements implements TransService {
         record.setTrans_type(transType);
         record.setTrans_category_id(transCategoryId);
         record.setTrans_cost(amount);
+        record.setTrans_no(timestamp + getRandomNo());
         record.setTrans_uid(transUid);
         record.setTrans_obj_id(transObjUid);
         record.setTrans_status(transStatus);
@@ -56,5 +59,15 @@ public class TransServiceImplements implements TransService {
     public void TwoFailTransferRecord(String transOutUid, String transInUid, Float amount, String transRemarks){
         FailRecord(transOutUid, transInUid, 0, amount, 1, transRemarks);
         FailRecord(transInUid, transOutUid, 1, amount, 1, transRemarks);
+    }
+
+    public String  getRandomNo(){
+            String sources = "123456789abcdefghijklmpqrstuvwxyz"; // 加上一些字母，就可以生成pc站的验证码了
+            Random rand = new Random();
+            StringBuffer flag = new StringBuffer();
+            for (int j = 0; j < 6; j++) {
+                flag.append(sources.charAt(rand.nextInt(32)) + "");
+            }
+        return flag.toString();
     }
 }

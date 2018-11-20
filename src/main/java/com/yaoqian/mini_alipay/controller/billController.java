@@ -55,4 +55,20 @@ public class billController {
             return ResultTools.result(404, e.getMessage(), null);
         }
     }
+    @RequestMapping(value = { "/QueryTransDetail" }, method = RequestMethod.POST)
+    public ResultEntity QueryTransDetail(Integer Trans_id) {
+        try {
+            if (null == Trans_id) {
+                return ResultTools.result(1001, "Trans_id is empty", null);
+            }
+            TransactionEntity Translist;
+            Translist = TransactionMapper.QueryTransDetail(Trans_id);
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("count", 1);
+            map.put("content", Translist);
+            return ResultTools.result(0, "",map);
+        } catch (Exception e) {
+            return ResultTools.result(404, e.getMessage(), null);
+        }
+    }
 }

@@ -1,9 +1,7 @@
 package com.yaoqian.mini_alipay.Service;
 
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
-import com.yaoqian.mini_alipay.mapper.TransactionMapper;
 import com.yaoqian.mini_alipay.mapper.TransationDao;
-import com.yaoqian.mini_alipay.mapper.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,9 +10,6 @@ import java.util.Date;
 
 @Component
 public class TransServiceImplements implements TransService {
-
-    @Autowired
-    private UserDao userDao;
 
     @Autowired
     private TransationDao transationDao;

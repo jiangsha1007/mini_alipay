@@ -45,16 +45,16 @@ public class TransController {
                 userDao.save(out_user);
                 userDao.save(in_user);
                 //save transaction records
-                transService.TwoSuccessTransferRecord(out_user.getUid(), in_user.getUid(), amount);
+                transService.TwoSuccessTransferRecord(out_user.getUid(),out_user.getUsername(), in_user.getUid(), in_user.getUsername(), amount);
                 return ResultTools.success("转账成功");
             }
             else{
-                transService.TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "余额不足");
+                transService.TwoFailTransferRecord(out_user.getUid(), out_user.getUsername(), in_user.getUid(), in_user.getUsername(), amount, "余额不足");
                 throw new Exception("余额不足");
             }
         }
         else {
-            transService.TwoFailTransferRecord(out_user.getUid(), in_user.getUid(), amount, "用户名不存在");
+            transService.TwoFailTransferRecord(out_user.getUid(), out_user.getUsername(), in_user.getUid(), in_user.getUsername(), amount, "用户名不存在");
             throw new Exception("用户名不存在！");
         }
     }

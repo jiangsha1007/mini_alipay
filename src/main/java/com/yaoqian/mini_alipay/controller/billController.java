@@ -1,8 +1,11 @@
 package com.yaoqian.mini_alipay.controller;
 
 import com.github.pagehelper.PageHelper;
+import com.yaoqian.mini_alipay.annotation.Authorization;
+import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
+import com.yaoqian.mini_alipay.entity.UserEntity;
 import com.yaoqian.mini_alipay.mapper.TransactionMapper;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +22,18 @@ import java.util.Map;
 public class billController {
     @Autowired
     private TransactionMapper TransactionMapper;
-    @RequestMapping(value = { "/QueryTransListByTime" }, method = RequestMethod.POST)
-    public ResultEntity QueryTransListByTime(String uid, Integer page, Integer pageSize,Integer time_type,String time_start,String time_end,Integer trans_category,Integer trans_type) {
+
+    @Authorization
+    @RequestMapping(value = { "/trans" }, method = RequestMethod.POST)
+    public ResultEntity QueryTransListByTime(@CurrentUser UserEntity currentuser, Integer page, Integer pageSize, Integer time_type, String time_start, String time_end, Integer trans_category, Integer trans_type) {
         try {
-            if (null == uid) {
+            if (null == currentuser.getUid()) {
                 return ResultTools.result(1001, "uid is empty", null);
             }
+            if(pageSize==null)
+                pageSize=20;
+            if(page==null)
+                page=0;
             PageHelper.startPage(page, pageSize);// 分页配置
             String trans_type_str;
             if(trans_type== null)
@@ -32,19 +41,21 @@ public class billController {
             else
                 trans_type_str = "("+trans_type+")";
             List<TransactionEntity> Translist;
+            if(time_type==null)
+                time_type=99;
             /*1 按月 2 按日 */
             if(time_type==1){
                 /*按照xxxx-xx格式* 个位不加0*/
                 int year= Integer.parseInt(time_start.split("-")[0]);
                 int month= Integer.parseInt(time_start.split("-")[1]);
-                Translist = TransactionMapper.QueryTranslistByTime_y(uid,year,month,trans_type_str);
+                Translist = TransactionMapper.QueryTranslistByTime_y(currentuser.getUid(),year,month,trans_type_str);
             }
             else if(time_type==2){
                 /*按照xxxx-xx-xx格式 个位加0*/
-                Translist = TransactionMapper.QueryTranslistByTime_d(uid,time_start,time_end,trans_type_str);
+                Translist = TransactionMapper.QueryTranslistByTime_d(currentuser.getUid(),time_start,time_end,trans_type_str);
             }
             else {
-                Translist = TransactionMapper.QueryTranslistByTime(uid);
+                Translist = TransactionMapper.QueryTranslistByTime(currentuser.getUid());
             }
             Map<String, Object> map = new HashMap<String, Object>();
             map.put("count", Translist.size());
@@ -55,6 +66,8 @@ public class billController {
             return ResultTools.result(404, e.getMessage(), null);
         }
     }
+
+    @Authorization
     @RequestMapping(value = { "/QueryTransDetail" }, method = RequestMethod.POST)
     public ResultEntity QueryTransDetail(Integer Trans_id) {
         try {

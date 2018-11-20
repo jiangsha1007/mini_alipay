@@ -2,6 +2,7 @@ package com.yaoqian.mini_alipay.Service;
 
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
 import com.yaoqian.mini_alipay.mapper.TransactionMapper;
+import com.yaoqian.mini_alipay.mapper.TransationDao;
 import com.yaoqian.mini_alipay.mapper.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,7 @@ public class TransServiceImplements implements TransService {
     private UserDao userDao;
 
     @Autowired
-    private TransactionMapper transactionMapper;
+    private TransationDao transationDao;
 
     @Override
     public void CreateRecord(String transUid, String transObjUid, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
@@ -37,7 +38,7 @@ public class TransServiceImplements implements TransService {
         record.setTrans_obj_id(transObjUid);
         record.setTrans_status(transStatus);
         record.setTrans_remarks(transRemarks);
-        transactionMapper.save(record);
+        transationDao.save(record);
     }
 
     @Override

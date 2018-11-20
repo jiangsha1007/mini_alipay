@@ -1,12 +1,12 @@
 package com.yaoqian.mini_alipay.controller;
 
 import com.yaoqian.mini_alipay.Service.TokenService;
+import com.yaoqian.mini_alipay.annotation.Authorization;
+import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.TokenEntity;
 import com.yaoqian.mini_alipay.entity.UserEntity;
 import com.yaoqian.mini_alipay.mapper.UserDao;
-import com.yaoqian.mini_alipay.annotation.Authorization;
-import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -26,8 +26,8 @@ public class TokenController {
     private TokenService tokenService;
 
     @PostMapping("/login")
-    public ResultEntity login(@RequestParam("username") String userName,
-                              @RequestParam("password") String password) throws Exception {
+    public ResultEntity login(@RequestParam(value = "username") String userName,
+                              @RequestParam(value = "password") String password) throws Exception {
         if (StringUtils.isEmpty(userName) || StringUtils.isEmpty(password)) {
             throw new Exception("用户名或密码为空");
         }

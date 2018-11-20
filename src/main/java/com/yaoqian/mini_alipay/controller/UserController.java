@@ -1,11 +1,11 @@
 package com.yaoqian.mini_alipay.controller;
+
 import com.yaoqian.mini_alipay.Service.TokenService;
 import com.yaoqian.mini_alipay.annotation.Authorization;
 import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
-import com.yaoqian.mini_alipay.mapper.TokenDao;
-import com.yaoqian.mini_alipay.mapper.UserDao;
 import com.yaoqian.mini_alipay.entity.UserEntity;
+import com.yaoqian.mini_alipay.mapper.UserDao;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
@@ -33,7 +33,7 @@ public class UserController {
      * @return ResultEntity---返回类
      */
     @PostMapping(value = "/register")
-    public ResultEntity userRegister(@Valid UserEntity userEntity, BindingResult bindingResult) {
+    public ResultEntity userRegister(@Valid @RequestBody UserEntity userEntity, BindingResult bindingResult) {
         if(bindingResult.hasErrors()){
             return ResultTools.error(404,bindingResult.getFieldError().getDefaultMessage());
         }
@@ -73,7 +73,7 @@ public class UserController {
      */
     @Authorization
     @PostMapping(value = "/update")
-    public ResultEntity userUpdateInfo(@Valid UserEntity newUserInfo,BindingResult bindingResult,@CurrentUser UserEntity currentUser){
+    public ResultEntity userUpdateInfo(@Valid UserEntity newUserInfo, BindingResult bindingResult, @CurrentUser UserEntity currentUser){
         if(bindingResult.hasErrors()){
             return ResultTools.error(404,bindingResult.getFieldError().getDefaultMessage());
         }

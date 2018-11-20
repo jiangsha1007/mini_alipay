@@ -1,16 +1,10 @@
 package com.yaoqian.mini_alipay.controller;
-import com.yaoqian.mini_alipay.mapper.TransactionMapper;
-import com.yaoqian.mini_alipay.entity.ResultEntity;
-import com.yaoqian.mini_alipay.mapper.UserDao;
-import com.yaoqian.mini_alipay.tools.ResultTools;
-import com.yaoqian.mini_alipay.entity.TransactionEntity;
-import org.springframework.beans.factory.annotation.Autowired;
-import com.github.pagehelper.PageHelper;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.yaoqian.mini_alipay.mapper.UserDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class BalanceController {

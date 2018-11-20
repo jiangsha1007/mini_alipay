@@ -1,12 +1,16 @@
 package com.yaoqian.mini_alipay.controller;
 
 import com.yaoqian.mini_alipay.Service.TransService;
+import com.yaoqian.mini_alipay.annotation.Authorization;
+import com.yaoqian.mini_alipay.annotation.CurrentUser;
 import com.yaoqian.mini_alipay.entity.ResultEntity;
 import com.yaoqian.mini_alipay.entity.UserEntity;
 import com.yaoqian.mini_alipay.mapper.UserDao;
 import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.transaction.Transactional;
 
@@ -21,18 +25,18 @@ public class TransController {
 
     /***
      * 转账
-     * @param out_usrname
+     * @param out_user
      * @param in_usrname
      * @param amount
      * @return ResultEntity
      * @throws Exception
      */
+    @Authorization
     @Transactional
     @PostMapping(value = "/transfer")
-    public ResultEntity UserTransfer(@RequestParam("out_usrname") String out_usrname,
+    public ResultEntity UserTransfer(@CurrentUser UserEntity out_user,
                                      @RequestParam("in_username") String in_usrname,
                                      @RequestParam("amount") Float amount) throws Exception{
-        UserEntity out_user = userDao.findByUsername(out_usrname);
         UserEntity in_user = userDao.findByUsername(in_usrname);
         if(out_user!=null && in_user!=null) {
             if (out_user.getBalance() >= amount) {

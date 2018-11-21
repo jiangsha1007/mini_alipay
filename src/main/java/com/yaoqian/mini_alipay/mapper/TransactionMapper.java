@@ -13,14 +13,14 @@ public interface TransactionMapper {
     public List<TransactionEntity> QueryTransByAll();
 
     /*******根据uid查询所有账户********/
-    @Select("select * from transaction_info where trans_uid = #{arg0}")
+    @Select("select * from transaction_info where trans_uid = #{arg0} order by trans_year desc,trans_month desc,trans_day desc")
     public List<TransactionEntity> QueryTranslistByTime(String uid);
 
     /*******根据月份查询账单********/
-    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_year =#{arg1} and trans_month =#{arg2} and trans_type in ${arg3}")
+    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_year =#{arg1} and trans_month =#{arg2} and trans_type in ${arg3} order by trans_year desc,trans_month desc,trans_day desc")
     public List<TransactionEntity> QueryTranslistByTime_y(String uid,int year,int month,String trans_type);
     /*******根据月份查询账单********/
-    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_time>= #{arg1} and trans_time <= #{arg2} and trans_type in ${arg3}")
+    @Select("select * from transaction_info where trans_uid = #{arg0} and trans_time>= #{arg1} and trans_time <= #{arg2} and trans_type in ${arg3} order by trans_year desc,trans_month desc,trans_day desc")
     public List<TransactionEntity> QueryTranslistByTime_d(String uid,String time_start,String time_end,String trans_type);
 
     /*******查询账单详细********/

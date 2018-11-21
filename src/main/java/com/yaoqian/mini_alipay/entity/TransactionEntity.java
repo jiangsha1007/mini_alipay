@@ -60,7 +60,7 @@ public class TransactionEntity {
     /***
      * 交易主体用户id
      */
-    @Column(nullable = false, length = 32)
+    @Column(length = 32)
     private String Trans_uid;
 
     /***

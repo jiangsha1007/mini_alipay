@@ -18,5 +18,5 @@ public interface NoticeMapper {
 
     /*******修改通知********/
     @Update("update notice set Notice_read=0 where Notice_id= #{arg0}")
-    public  int Notice( int nid);
+    public  int updateNotice( long nid);
 }

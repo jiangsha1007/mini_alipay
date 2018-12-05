@@ -82,6 +82,7 @@ public class TransController {
             else {
                 map.put("count", 1);
                 map.put("content", Noticelist);
+                NoticeMapper.updateNotice(Noticelist.getNotice_id());
             }
             return ResultTools.result(0, "",map);
         } catch (Exception e) {

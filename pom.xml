@@ -73,6 +73,12 @@
             <version>1.2.41</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>dtx-enterprise-sofa-boot-starter</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -84,6 +90,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

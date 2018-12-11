@@ -1,0 +1,36 @@
+2018-12-11 14:53:20,977 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 14:53:20,985 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 14:53:21,087 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 14:53:21,088 ERROR main                             - Readiness check result: fail
+2018-12-11 14:54:22,098 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 14:54:22,099 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 14:54:22,169 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 14:54:22,169 ERROR main                             - Readiness check result: fail
+2018-12-11 14:58:40,609 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 14:58:40,609 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 14:58:40,678 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 14:58:40,678 ERROR main                             - Readiness check result: fail
+2018-12-11 14:59:15,581 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 14:59:15,582 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 14:59:15,653 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 14:59:15,653 ERROR main                             - Readiness check result: fail
+2018-12-11 15:02:13,449 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 15:02:13,449 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 15:02:13,525 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 15:02:13,525 ERROR main                             - Readiness check result: fail
+2018-12-11 15:40:30,249 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 15:40:30,250 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 15:40:30,299 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 15:40:30,299 ERROR main                             - Readiness check result: fail
+2018-12-11 18:19:58,275 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 18:19:58,275 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 18:19:58,322 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 18:19:58,322 ERROR main                             - Readiness check result: fail
+2018-12-11 18:19:59,060 ERROR RMI TCP Connection(7)-127.0.0.1  - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 18:19:59,060 ERROR RMI TCP Connection(7)-127.0.0.1  - SOFABoot component readiness check result: failed.
+2018-12-11 18:25:38,299 ERROR main                             - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 18:25:38,300 ERROR main                             - SOFABoot component readiness check result: failed.
+2018-12-11 18:25:38,341 ERROR main                             - first phase of the readiness check result: fail
+2018-12-11 18:25:38,341 ERROR main                             - Readiness check result: fail
+2018-12-11 18:25:38,844 ERROR RMI TCP Connection(7)-127.0.0.1  - component readiness check failed. component name[DTX]; no retry; fail details:[{DownDetail=No long-connection to dtx-server is set up.}]
+2018-12-11 18:25:38,845 ERROR RMI TCP Connection(7)-127.0.0.1  - SOFABoot component readiness check result: failed.

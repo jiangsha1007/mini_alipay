@@ -7,10 +7,12 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomi
 import java.util.Properties;
 import org.springframework.context.annotation.Bean;
 import com.github.pagehelper.PageHelper;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+@ImportResource("classpath:springConfig.xml")
 @SpringBootApplication
 @MapperScan("com.yaoqian.mini_alipay.mapper")
 public class DemoApplication implements EmbeddedServletContainerCustomizer{

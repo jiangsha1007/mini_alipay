@@ -3,7 +3,6 @@ package com.yaoqian.mini_alipay.Service;
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
 import com.yaoqian.mini_alipay.mapper.NoticeMapper;
 import com.yaoqian.mini_alipay.mapper.TransationDao;
-import com.yaoqian.mini_alipay.mapper.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
@@ -17,10 +16,7 @@ public class TransServiceImplements implements TransService {
     private TransationDao transationDao;
 
     @Autowired
-    private UserDao userDao;
-
-    @Autowired
-    private NoticeMapper NoticeMapper;
+    private NoticeMapper noticeMapper;
 
     @Override
     public void CreateRecord(String transUid, String Trans_name,String transObjUid, String Trans_obj_name, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
@@ -49,9 +45,9 @@ public class TransServiceImplements implements TransService {
 
         //记录通知
         if(transType==0)
-            NoticeMapper.addNotice("0",transUid,a.substring(11),'向'+Trans_obj_name+"转账"+amount+"元",1,1);
+            noticeMapper.addNotice("0",transUid,a.substring(11),'向'+Trans_obj_name+"转账"+amount+"元",1,1);
         else
-            NoticeMapper.addNotice("0",transUid,a.substring(11),"收到"+Trans_obj_name+"转账"+amount+"元",1,1);
+            noticeMapper.addNotice("0",transUid,a.substring(11),"收到"+Trans_obj_name+"转账"+amount+"元",1,1);
 
     }
 
@@ -77,7 +73,7 @@ public class TransServiceImplements implements TransService {
         FailRecord(transInUid, Trans_name, transOutUid, Trans_obj_name,1, amount, 1, transRemarks);
     }
 
-    public String  getRandomNo(){
+    private String  getRandomNo(){
             String sources = "123456789abcdefghijklmpqrstuvwxyz"; // 加上一些字母，就可以生成pc站的验证码了
             Random rand = new Random();
             StringBuffer flag = new StringBuffer();

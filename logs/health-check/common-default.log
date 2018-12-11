@@ -670,3 +670,171 @@ class org.springframework.boot.actuate.health.DataSourceHealthIndicator
 2018-11-19 17:37:33,246 INFO  RMI TCP Connection(6)-127.0.0.1  - SOFABoot component readiness check result: success.
 2018-11-19 17:37:33,246 INFO  RMI TCP Connection(6)-127.0.0.1  - Begin SpringContext readiness check.
 2018-11-19 17:37:33,246 INFO  RMI TCP Connection(6)-127.0.0.1  - SpringContext readiness check result: success.
+2018-12-11 14:51:39,024 INFO  main                             - 
+Found 0 SOFABoot component health checkers:
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 14:51:39,028 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 14:51:39,028 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 14:51:39,028 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 14:51:39,028 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 14:51:39,028 INFO  main                             - SOFABoot component readiness check result: success.
+2018-12-11 14:51:39,028 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 14:51:39,030 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 14:51:39,100 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 14:51:39,100 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 14:51:39,100 INFO  main                             - first phase of the readiness check result: success
+2018-12-11 14:51:39,100 INFO  main                             - Begin second phase of the readiness check
+2018-12-11 14:51:39,100 INFO  main                             - Begin SofaBootMiddlewareAfterReadinessCheckCallback readiness check
+2018-12-11 14:51:39,100 INFO  main                             - SofaBootMiddlewareAfterReadinessCheckCallback readiness check result: success.
+2018-12-11 14:51:39,100 INFO  main                             - Begin SofaBootAfterReadinessCheckCallback readiness check
+2018-12-11 14:51:39,101 INFO  main                             - SofaBootAfterReadinessCheckCallback readiness check result: success.
+2018-12-11 14:51:39,102 INFO  main                             - SOFABoot readiness check callback : success.
+2018-12-11 14:51:39,102 INFO  main                             - second phase of the readiness check result: success
+2018-12-11 14:51:39,102 INFO  main                             - Readiness check result: success
+2018-12-11 14:53:20,903 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 14:53:20,909 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 14:53:20,909 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 14:53:20,909 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 14:53:20,909 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 14:53:20,984 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 14:53:20,985 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 14:53:20,987 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 14:53:21,087 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 14:53:21,087 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 14:54:22,046 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 14:54:22,051 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 14:54:22,051 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 14:54:22,051 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 14:54:22,051 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 14:54:22,099 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 14:54:22,099 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 14:54:22,100 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 14:54:22,168 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 14:54:22,169 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 14:58:40,546 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 14:58:40,551 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 14:58:40,551 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 14:58:40,551 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 14:58:40,551 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 14:58:40,609 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 14:58:40,609 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 14:58:40,611 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 14:58:40,678 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 14:58:40,678 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 14:59:15,517 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 14:59:15,521 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 14:59:15,522 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 14:59:15,522 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 14:59:15,522 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 14:59:15,582 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 14:59:15,582 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 14:59:15,583 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 14:59:15,653 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 14:59:15,653 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 15:02:13,401 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 15:02:13,405 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 15:02:13,405 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 15:02:13,405 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 15:02:13,405 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 15:02:13,449 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 15:02:13,449 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 15:02:13,451 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 15:02:13,525 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 15:02:13,525 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 15:40:30,244 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 15:40:30,248 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 15:40:30,248 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 15:40:30,248 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 15:40:30,248 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 15:40:30,250 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 15:40:30,250 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 15:40:30,252 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 15:40:30,299 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 15:40:30,299 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 18:19:58,272 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 18:19:58,274 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 18:19:58,274 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 18:19:58,274 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 18:19:58,274 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 18:19:58,275 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 18:19:58,275 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 18:19:58,277 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 18:19:58,321 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 18:19:58,321 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 18:19:59,059 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-12-11 18:19:59,060 INFO  RMI TCP Connection(7)-127.0.0.1  - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 18:19:59,060 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SpringContext readiness check.
+2018-12-11 18:19:59,060 INFO  RMI TCP Connection(7)-127.0.0.1  - SpringContext readiness check result: success.
+2018-12-11 18:25:38,296 INFO  main                             - 
+Found 2 SOFABoot component health checkers:
+class com.alipay.boot.dtx.spring.healthcheck.DtxHealthChecker
+class com.alipay.sofa.runtime.spring.health.ComponentHealthChecker
+Found 2 HealthIndicator checkers:
+class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator
+class org.springframework.boot.actuate.health.DataSourceHealthIndicator
+
+2018-12-11 18:25:38,298 INFO  main                             - Begin first phase of the readiness check
+2018-12-11 18:25:38,299 INFO  main                             - Begin SpringContext readiness check.
+2018-12-11 18:25:38,299 INFO  main                             - SpringContext readiness check result: success.
+2018-12-11 18:25:38,299 INFO  main                             - Begin SOFABoot component readiness check.
+2018-12-11 18:25:38,300 INFO  main                             - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 18:25:38,300 INFO  main                             - Begin HealthIndicator readiness check.
+2018-12-11 18:25:38,302 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DiskSpaceHealthIndicator)check success.
+2018-12-11 18:25:38,341 INFO  main                             - HealthIndicator (class org.springframework.boot.actuate.health.DataSourceHealthIndicator)check success.
+2018-12-11 18:25:38,341 INFO  main                             - Readiness check HealthIndicator result: success.
+2018-12-11 18:25:38,844 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SOFABoot component readiness check.
+2018-12-11 18:25:38,844 INFO  RMI TCP Connection(7)-127.0.0.1  - component readiness check success. component name[RUNTIME-COMPONENT]; no retry.
+2018-12-11 18:25:38,845 INFO  RMI TCP Connection(7)-127.0.0.1  - Begin SpringContext readiness check.
+2018-12-11 18:25:38,845 INFO  RMI TCP Connection(7)-127.0.0.1  - SpringContext readiness check result: success.

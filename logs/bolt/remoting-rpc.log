@@ -1,0 +1,14 @@
+2018-12-11 15:27:58,692 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 15:27:58,741 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 15:28:36,914 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 15:28:36,964 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 15:29:57,537 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 15:29:57,597 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 15:38:17,153 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 15:38:17,196 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 15:39:52,738 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 15:39:52,780 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 18:19:23,246 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 18:19:23,267 WARN  [RpcClient#130] [main] Switch on reconnect manager
+2018-12-11 18:25:03,415 WARN  [RpcConnectionFactory#237] [main] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2018-12-11 18:25:03,434 WARN  [RpcClient#130] [main] Switch on reconnect manager

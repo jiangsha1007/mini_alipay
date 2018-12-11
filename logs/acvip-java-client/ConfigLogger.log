@@ -1,0 +1,105 @@
+[2018-12-11 15:27:58,823][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 15:27:58,824][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 15:27:58,825][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 15:27:58,825][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 15:27:58,825][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 15:28:37,053][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 15:28:37,054][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 15:29:57,701][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 15:29:57,702][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 15:29:57,702][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 15:29:57,702][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 15:29:57,702][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 15:29:57,702][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 15:29:57,703][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 15:38:17,278][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 15:38:17,279][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 15:38:17,280][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 15:39:52,873][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 15:39:52,874][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 15:39:52,875][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 18:19:23,326][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 18:19:23,327][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 18:19:23,327][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 18:19:23,327][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 18:19:23,327][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 18:19:23,327][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - Print AntVipClient(version:1.0.4) configure values:
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - diskCacheEnable=true
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - diskStoreDir=C:\Users\ericyy\conf/acvip-java-client-cache\
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - requestTimeoutMs=500
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - appName=dtx
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - datacenter=null
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - instanceId=null
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - endPoint=100.103.1.174
+[2018-12-11 18:25:03,495][INFO][main][c.a.a.c.l.ConfigLogger] - accessKey=null
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - accessSecret=null
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - trFrom=java-client
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - version=1.0.4
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - drmEnable=false
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - drmControl=DrmControl{mainSwitch=true, allAvailable=false, waitServerListTimeoutMs=2000, printStatInfoIntervalSec=60, restrainEnable=false, restrainStrategy='*:50|-1|50', restrainStrategies={*=DefaultRestrainStrategy{rangeToPercents=[RangeToPercent{min=50, max=2147483647, percent=50}]}}}
+[2018-12-11 18:25:03,496][INFO][main][c.a.a.c.l.ConfigLogger] - drmSyncControl=DrmSyncControl{disableSync=false, checkIntervalWhenDisableSync=5, noAvailableServerCheckIntervalSeconds=5, ioErrorIntervalSeconds=1, successParkIntervalMs=500, unknownErrorIntervalSeconds=5, responseExceptionIntervalSeconds=3}

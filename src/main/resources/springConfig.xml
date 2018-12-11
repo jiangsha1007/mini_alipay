@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://sofastack.io/schema/sofaboot"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.alipay.sofa.dtx.client.aop.ComponentScanner" />
+
+    <bean id="xx1DataSource" class="com.alipay.sofa.dtx.datasource.druid.DruidDtxDataSource">
+        <property name="jdbcUrl" value="jdbc:mysql://115.28.172.133:3306/mini_alipay"/>
+        <property name="userName" value="mini_alipay"/>
+        <property name="passWord" value="12345678"/>
+        <property name="uniqueDbId" value="xx1" />
+        <property name="dbType" value="MySQL" />
+    </bean>
+
+</beans>

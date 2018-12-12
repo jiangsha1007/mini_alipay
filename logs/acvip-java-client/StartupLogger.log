@@ -1,38 +1,7 @@
-[2018-12-11 15:27:58,822][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 15:28:08,904][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 15:28:37,052][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 15:28:47,118][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 15:28:57,127][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 15:28:57,127][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 15:28:57,152][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 15:28:57,153][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20100ms). ==================
-[2018-12-11 15:29:57,700][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 15:30:07,789][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 15:30:17,800][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 15:30:17,801][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 15:30:17,827][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 15:30:17,827][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20127ms). ==================
-[2018-12-11 15:38:17,277][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 15:38:27,349][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 15:38:37,360][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 15:38:37,360][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 15:38:37,385][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 15:38:37,386][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20108ms). ==================
-[2018-12-11 15:39:52,872][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 15:40:02,953][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 15:40:12,958][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 15:40:12,958][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 15:40:12,975][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 15:40:12,975][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20103ms). ==================
-[2018-12-11 18:19:23,325][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 18:19:33,371][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 18:19:43,380][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 18:19:43,380][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 18:19:43,397][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 18:19:43,398][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20073ms). ==================
-[2018-12-11 18:25:03,494][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
-[2018-12-11 18:25:13,539][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
-[2018-12-11 18:25:23,550][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
-[2018-12-11 18:25:23,550][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
-[2018-12-11 18:25:23,570][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
-[2018-12-11 18:25:23,571][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20077ms). ==================
+[2018-12-12 22:35:02,149][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
+[2018-12-12 22:35:17,853][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init started ==================
+[2018-12-12 22:35:27,879][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local nameList, size is 0
+[2018-12-12 22:35:37,891][INFO][main][c.a.a.c.l.StartupLogger] - Loaded local zoneInfoList([]) from disk, localZone=null
+[2018-12-12 22:35:37,891][INFO][main][c.a.a.c.l.StartupLogger] - ExtensionParamsCache inited
+[2018-12-12 22:35:37,906][INFO][main][c.a.a.c.l.StartupLogger] - [VipServerHttpSynchronizer] Started.
+[2018-12-12 22:35:37,906][INFO][main][c.a.a.c.l.StartupLogger] - ================== Init done (elapsed 20053ms). ==================

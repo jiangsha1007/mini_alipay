@@ -1,41 +1,11 @@
-2018-12-11 15:27:57,551 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 15:27:57,554 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 15:27:57,619 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
-2018-12-11 15:27:57,619 INFO  main                             - DTX client start init.
-2018-12-11 15:27:57,627 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 15:28:35,860 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 15:28:35,941 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 15:28:36,025 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
-2018-12-11 15:28:36,025 INFO  main                             - DTX client start init.
-2018-12-11 15:28:36,036 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 15:29:07,184 INFO  main                             - DTX client init finish.
-2018-12-11 15:29:56,704 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 15:29:56,708 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 15:29:56,789 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
-2018-12-11 15:29:56,789 INFO  main                             - DTX client start init.
-2018-12-11 15:29:56,798 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 15:30:27,869 INFO  main                             - DTX client init finish.
-2018-12-11 15:38:16,463 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 15:38:16,465 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 15:38:16,551 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
-2018-12-11 15:38:16,551 INFO  main                             - DTX client start init.
-2018-12-11 15:38:16,558 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 15:38:47,423 INFO  main                             - DTX client init finish.
-2018-12-11 15:39:51,857 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 15:39:51,861 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 15:39:51,958 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
-2018-12-11 15:39:51,958 INFO  main                             - DTX client start init.
-2018-12-11 15:39:51,968 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 15:40:23,009 INFO  main                             - DTX client init finish.
-2018-12-11 18:19:23,030 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 18:19:23,032 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 18:19:23,079 INFO  main                             - inited RemotingProtocolParser: ["DUBBO","IN_JVM","SOFABOOT_RPC"]
-2018-12-11 18:19:23,079 INFO  main                             - DTX client start init.
-2018-12-11 18:19:23,083 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 18:19:53,427 INFO  main                             - DTX client init finish.
-2018-12-11 18:25:03,203 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
-2018-12-11 18:25:03,206 INFO  main                             - Dtx run in Sofaboot 2.3.0.
-2018-12-11 18:25:03,257 INFO  main                             - inited RemotingProtocolParser: ["DUBBO","IN_JVM","SOFABOOT_RPC"]
-2018-12-11 18:25:03,257 INFO  main                             - DTX client start init.
-2018-12-11 18:25:03,262 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
-2018-12-11 18:25:33,593 INFO  main                             - DTX client init finish.
+2018-12-12 22:35:02,008 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
+2018-12-12 22:35:02,008 INFO  main                             - Dtx run in Sofaboot 2.3.0.
+2018-12-12 22:35:02,040 INFO  main                             - inited RemotingProtocolParser: ["IN_JVM","DUBBO","SOFABOOT_RPC"]
+2018-12-12 22:35:02,040 INFO  main                             - DTX client start init.
+2018-12-12 22:35:02,040 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
+2018-12-12 22:35:17,732 INFO  main                             - inited framework instance: com.alipay.dtx.framework.sofaboot.SofaBootFramework
+2018-12-12 22:35:17,732 INFO  main                             - Dtx run in Sofaboot 2.3.0.
+2018-12-12 22:35:17,757 INFO  main                             - inited RemotingProtocolParser: ["SOFABOOT_RPC","IN_JVM","DUBBO"]
+2018-12-12 22:35:17,757 INFO  main                             - DTX client start init.
+2018-12-12 22:35:17,759 INFO  main                             - inited configurantion instance: com.alipay.dtx.framework.sofaboot.conf.SofaBootConfiguration
+2018-12-12 22:35:47,983 INFO  main                             - DTX client init finish.

@@ -1,6 +1,1 @@
-2018-12-11 15:29:09,482 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[user123]
-2018-12-11 15:30:29,796 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[user123]
-2018-12-11 15:38:49,242 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[mini_alipay]
-2018-12-11 15:40:25,235 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[mini_alipay]
-2018-12-11 18:19:54,728 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[mini_alipay]
-2018-12-11 18:25:34,893 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[mini_alipay]
+2018-12-12 22:35:48,561 INFO  main                             - druid datasource inited, result:true,detail:[MySQL]+[mini_alipay]

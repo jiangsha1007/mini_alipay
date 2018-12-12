@@ -52,6 +52,18 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.2.2</version>
         </dependency>
+        <!-- QRCode依赖 -->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.2.0</version>
+        </dependency>
 
         <!-- jdbc依赖 -->
         <dependency>

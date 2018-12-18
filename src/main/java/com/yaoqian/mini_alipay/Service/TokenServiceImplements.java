@@ -1,5 +1,7 @@
 package com.yaoqian.mini_alipay.Service;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.yaoqian.mini_alipay.entity.TokenEntity;
 import com.yaoqian.mini_alipay.mapper.TokenDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,7 @@ public class TokenServiceImplements implements TokenService {
     @Override
     public TokenEntity createToken(String userId) {
         String token = UUID.randomUUID().toString();
+        //String token = JWT.create().withAudience(userId).sign(Algorithm.HMAC256(password));
         TokenEntity tokenEntity = new TokenEntity(userId, token);
         tokenDao.save(tokenEntity);
         return tokenEntity;

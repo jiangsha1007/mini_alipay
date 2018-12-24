@@ -1,10 +1,13 @@
 package com.yaoqian.mini_alipay.controller;
 
 import com.yaoqian.mini_alipay.Service.QRcodeServer;
+import com.yaoqian.mini_alipay.annotation.Authorization;
+import com.yaoqian.mini_alipay.annotation.CurrentUser;
+import com.yaoqian.mini_alipay.entity.ResultEntity;
+import com.yaoqian.mini_alipay.entity.UserEntity;
+import com.yaoqian.mini_alipay.tools.ResultTools;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
@@ -18,10 +21,23 @@ public class QRcodeController {
 
     @Autowired
     private QRcodeServer QRcodeServer;
-
-    @GetMapping(value = "/Qrcode/{id}")
-    public void productcode(@PathVariable("id") String id, HttpServletResponse response, HttpSession session) {
-        BufferedImage image = QRcodeServer.zxingCodeCreate(id, 200,null);
+    @Authorization
+    @RequestMapping(value = { "/Qrcode" }, method = RequestMethod.POST)
+    public void productcode(@CurrentUser UserEntity currentuser,HttpServletResponse response) {
+        /*if (null == currentuser.getUid()) {
+            return ResultTools.result(1001, "uid is empty", null);
+        }*/
+        BufferedImage image = QRcodeServer.zxingCodeCreate(currentuser.getUid(), 200,null);
+        response.setContentType("image/png");
+        try{
+            OutputStream os = response.getOutputStream();
+            ImageIO.write(image, "png", os);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void productAAcode(@CurrentUser UserEntity currentuser,Float coin,HttpServletResponse response, HttpSession session) {
+        BufferedImage image = QRcodeServer.zxingCodeCreate(currentuser.getUid()+"|"+coin, 200,null);
         response.setContentType("image/png");
         try{
             OutputStream os = response.getOutputStream();

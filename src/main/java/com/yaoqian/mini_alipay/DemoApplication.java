@@ -14,7 +14,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-@ImportResource("classpath:springConfig.xml")
+
 @SpringBootApplication
 @MapperScan("com.yaoqian.mini_alipay.mapper")
 public class DemoApplication implements EmbeddedServletContainerCustomizer{

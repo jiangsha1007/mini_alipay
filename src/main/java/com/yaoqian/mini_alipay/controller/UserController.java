@@ -30,7 +30,7 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return ResultTools.error(404,bindingResult.getFieldError().getDefaultMessage());
         }
-
+        System.out.print(userEntity.toString());
         return userService.Register(userEntity);
     }
 

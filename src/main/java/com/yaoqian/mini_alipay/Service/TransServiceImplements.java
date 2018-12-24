@@ -1,7 +1,8 @@
 package com.yaoqian.mini_alipay.Service;
 
 import com.yaoqian.mini_alipay.entity.TransactionEntity;
-import com.yaoqian.mini_alipay.mapper.NoticeMapper;
+import com.yaoqian.mini_alipay.entity.NoticeEntity;
+import com.yaoqian.mini_alipay.mapper.NoticeDao;
 import com.yaoqian.mini_alipay.mapper.TransationDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,9 +15,9 @@ public class TransServiceImplements implements TransService {
 
     @Autowired
     private TransationDao transationDao;
-
     @Autowired
-    private NoticeMapper noticeMapper;
+    private NoticeDao noticeDao;
+
 
     @Override
     public void CreateRecord(String transUid, String Trans_name,String transObjUid, String Trans_obj_name, Integer transType, Float amount, Integer transStatus, Integer transCategoryId, String transRemarks){
@@ -44,11 +45,22 @@ public class TransServiceImplements implements TransService {
         transationDao.save(record);
 
         //记录通知
-        if(transType==0)
-            noticeMapper.addNotice("0",transUid,a.substring(11),'向'+Trans_obj_name+"转账"+amount+"元",1,1);
-        else
-            noticeMapper.addNotice("0",transUid,a.substring(11),"收到"+Trans_obj_name+"转账"+amount+"元",1,1);
-
+        NoticeEntity notice = new NoticeEntity();
+        notice.setNotice_uid("0");
+        notice.setNotice_to_uid(transUid);
+        notice.setNotice_time(a.substring(11));
+        notice.setNotice_read(1);
+        notice.setNotice_type(1);
+        if(transType==0) {
+            notice.setNotice_text("向" + Trans_obj_name + "转账" + amount + "元");
+            noticeDao.save(notice);
+        }
+            //noticeMapper.addNotice("0",transUid,a.substring(11),'向'+Trans_obj_name+"转账"+amount+"元",1,1);
+        else{
+            notice.setNotice_text("收到"+Trans_obj_name+"转账"+amount+"元");
+            noticeDao.save(notice);
+        }
+            //noticeMapper.addNotice("0",transUid,a.substring(11),"收到"+Trans_obj_name+"转账"+amount+"元",1,1);
     }
 
     @Override

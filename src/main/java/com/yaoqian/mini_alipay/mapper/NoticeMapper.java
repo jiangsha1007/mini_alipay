@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface NoticeMapper {
     /*******查询最新未接受通知数据********/
-    @Select("select * from notice where notice_to_uid = #{arg0} and notice_read=1 order by notice_id Desc")
+    @Select("select * from notice where notice_to_uid = #{arg0} and notice_read=1 order by notice_id Desc limit 0,1")
     NoticeEntity queryNotice(String uid);
 
     /*******增加通知********/

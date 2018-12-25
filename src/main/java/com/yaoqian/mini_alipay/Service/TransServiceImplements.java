@@ -57,7 +57,7 @@ public class TransServiceImplements implements TransService {
         }
             //noticeMapper.addNotice("0",transUid,a.substring(11),'向'+Trans_obj_name+"转账"+amount+"元",1,1);
         else{
-            notice.setNotice_text("收到"+Trans_obj_name+"转账"+amount+"元");
+            notice.setNotice_text("收到"+Trans_name+"转账"+amount+"元");
             noticeDao.save(notice);
         }
             //noticeMapper.addNotice("0",transUid,a.substring(11),"收到"+Trans_obj_name+"转账"+amount+"元",1,1);

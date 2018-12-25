@@ -71,19 +71,21 @@ public class TransController {
             if (null == currentuser.getUid()) {
                 return ResultTools.result(1001, "uid is empty", null);
             }
+
             NoticeEntity Noticelist;
             Noticelist = noticeService.queryNotice(currentuser.getUid());
             Map<String, Object> map = new HashMap<String, Object>();
-            if(Noticelist==null){
+            if (Noticelist == null) {
                 map.put("count", 0);
                 map.put("content", "");
-            }
-            else {
+            } else {
                 map.put("count", 1);
                 map.put("content", Noticelist);
                 noticeService.updateNotice(Noticelist.getNotice_id());
+
             }
-            return ResultTools.result(0, "",map);
+            return ResultTools.result(0, "", map);
+
         } catch (Exception e) {
             return ResultTools.result(404, e.getMessage(), null);
         }
